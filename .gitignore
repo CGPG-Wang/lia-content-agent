@@ -1,0 +1,21 @@
+# Local API credentials
+lia_agent/config.py
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# IDE and OS
+.idea/
+.DS_Store
+
+# Local experiments and outputs
+prototypes/qwen_live_runs/
