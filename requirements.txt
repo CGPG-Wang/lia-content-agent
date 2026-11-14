@@ -1,0 +1,5 @@
+# Python 3.11 recommended. FFmpeg / FFprobe are system executables;
+# install them separately (e.g. conda install -c conda-forge ffmpeg).
+streamlit>=1.40,<2
+dashscope>=1.20,<2
+requests>=2.31,<3
