@@ -1,3 +1,4 @@
+
 # Lia Content Agent
 
 **v0.1 · Local, human-in-the-loop multimodal video keyframe workflow**
@@ -16,6 +17,42 @@ The project's primary purpose is to **implement a real workflow as a tested soft
 - **Recovery of saved results:** open a past task from its absolute path, browse its saved candidate rounds, and select a saved frame without calling Qwen again.
 - **Controlled final replacement:** after the first approval, allow one final replacement; back up the original frame to `1f-original-bk.png`, preserve selection history, and lock subsequent replacements. Legacy `1f-original.png.bk` backups are recognized.
 - **Offline tests:** unit tests with mocked Qwen responses, plus integration tests using local FFmpeg when available.
+
+## Screenshots
+
+The following screenshots illustrate the implemented v0.1 workflow. Local file paths have been redacted. Click a section to expand the preview, or click the image to view it at its original size.
+
+<!-- SCREENSHOT 1: docs/screenshots/02-keyframe-review.png -->
+<details>
+<summary><strong>1. Candidate Review</strong> — Qwen recommendations, extracted frames, and human approval</summary>
+
+[![Keyframe Review](docs/screenshots/02-keyframe-review.png)](docs/screenshots/02-keyframe-review.png)
+
+</details>
+
+<!-- SCREENSHOT 2: docs/screenshots/03-feedback-history.png -->
+<details>
+<summary><strong>2. Multi-round Feedback</strong> — new requests with visible previous candidate rounds</summary>
+
+[![Multi-round Feedback](docs/screenshots/03-feedback-history.png)](docs/screenshots/03-feedback-history.png)
+
+</details>
+
+<!-- SCREENSHOT 3: docs/screenshots/04-task-recovery.png -->
+<details>
+<summary><strong>3. Task Recovery</strong> — reopen saved results and compare historical candidates</summary>
+
+[![Task Recovery](docs/screenshots/04-task-recovery.png)](docs/screenshots/04-task-recovery.png)
+
+</details>
+
+<!-- SCREENSHOT 4: docs/screenshots/05-final-replacement.png -->
+<details>
+<summary><strong>4. Final Replacement Confirmation</strong> — explicit approval before a one-time locked replacement</summary>
+
+[![Final Replacement Confirmation](docs/screenshots/05-final-replacement.png)](docs/screenshots/05-final-replacement.png)
+
+</details>
 
 ## Scope and limitations
 
